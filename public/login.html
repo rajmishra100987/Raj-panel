@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bot Hosting Panel</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='2' width='20' height='8' rx='2' ry='2'%3E%3C/rect%3E%3Crect x='2' y='14' width='20' height='8' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='6' y1='6' x2='6.01' y2='6'%3E%3C/line%3E%3Cline x1='6' y1='18' x2='6.01' y2='18'%3E%3C/line%3E%3C/svg%3E" alt="Logo">
+                <h1>Bot Hosting Panel</h1>
+                <p>Sign in to manage your bots</p>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                <div class="error-message" id="errorMessage"></div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <span class="btn-text">Sign In</span>
+                    <span class="btn-loading" style="display:none;">Signing in...</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
