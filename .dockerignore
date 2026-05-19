@@ -1,0 +1,6 @@
+node_modules
+uploads
+bots
+.git
+.env
+*.log
