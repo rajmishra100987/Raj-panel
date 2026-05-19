@@ -31,12 +31,12 @@ COPY . .
 # Create required directories
 RUN mkdir -p uploads bots
 
-# Expose port (Hugging Face uses 7860)
-EXPOSE 7860
+# Expose port
+EXPOSE 5000
 
 # Set environment variables
 ENV NODE_ENV=production
-ENV PORT=7860
+ENV PORT=5000
 
 # Start the application
 CMD ["node", "server.js"]
